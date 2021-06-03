@@ -61,7 +61,7 @@ public class LoginWindow extends JFrame {
       adminCB.setBounds(305, 200, 115, 23);
       panel_1.add(adminCB);
       
-      //·Î±×ÀÎ ¹öÆ°
+      //ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°
 		JButton lwLoginB = new JButton("\uB85C\uADF8\uC778");
 		lwLoginB.setBackground(UIManager.getColor("Button.light"));
 		lwLoginB.addActionListener(new ActionListener() {
@@ -77,19 +77,19 @@ public class LoginWindow extends JFrame {
 						} catch (SQLException e1) {
 							e1.printStackTrace();
 						}
-						if (adminCB.isSelected()) {//admin Å¬¸¯µÇ¾î ÀÖÀ¸¸é
+						if (adminCB.isSelected()) {//admin Å¬ï¿½ï¿½ï¿½Ç¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 							if(LibraryMain.loginVO.getAdmin()==1) {
-							JOptionPane.showMessageDialog(null, "·Î±×ÀÎ¿Ï·á");	
+							JOptionPane.showMessageDialog(null, "ï¿½Î±ï¿½ï¿½Î¿Ï·ï¿½");	
 						 	MainPage.loginOK(adminCB.isSelected());
 							dispose();
 								}							
 							else
-								JOptionPane.showMessageDialog(null, "°ü¸®ÀÚ ±ÇÇÑÀÌ ¾ø½À´Ï´Ù.");
+								JOptionPane.showMessageDialog(null, "hh");
 							} //admin check - end
 						
 						
-						else if (!adminCB.isSelected()) {	//admin Å¬¸¯ ¾ÈµÇ¾îÀÖÀ¸¸é	
-						JOptionPane.showMessageDialog(null, "·Î±×ÀÎ¿Ï·á");
+						else if (!adminCB.isSelected()) {	//admin Å¬ï¿½ï¿½ ï¿½ÈµÇ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½	
+						JOptionPane.showMessageDialog(null, "ï¿½Î±ï¿½ï¿½Î¿Ï·ï¿½");
 						MainPage.loginOK(adminCB.isSelected());
 						dispose();
 						}	//admin check(x) - end
@@ -108,7 +108,7 @@ public class LoginWindow extends JFrame {
 
             
                /*
-                * ·Î±×ÀÎ ±¸Çö
+                * ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                 * 
                 */
                
@@ -119,7 +119,7 @@ public class LoginWindow extends JFrame {
       panel_1.add(lwLoginB);
       
    
-      //È¸¿ø°¡ÀÔ panel·Î ÀÌµ¿ ¹öÆ°
+      //È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ panelï¿½ï¿½ ï¿½Ìµï¿½ ï¿½ï¿½Æ°
       JButton joinB = new JButton("\uD68C\uC6D0\uAC00\uC785");
       joinB.setBackground(UIManager.getColor("Button.light"));
       joinB.setBounds(251, 245, 97, 23);
